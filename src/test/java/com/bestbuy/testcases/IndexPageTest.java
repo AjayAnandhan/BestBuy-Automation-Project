@@ -28,9 +28,9 @@ public class IndexPageTest extends Base{
 	
 	@Test
 	public void validateURL() throws Throwable {
-		String result = locationPage.validateURL();
+		String actualURL = locationPage.validateURL();
 		String expectedURL = prop.getProperty("url");
-		Assert.assertEquals(result, expectedURL);
+		Assert.assertEquals(actualURL, expectedURL);
 	}
 	
 }
